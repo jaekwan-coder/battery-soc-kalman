@@ -50,6 +50,8 @@ class BatteryParams:
         soc_clipped = np.clip(soc, 0.0, 1.0)
         return np.interp(soc_clipped, self.soc_points, self.ocv_points)
 
+# 일단 그림을 그려두는거네. 데이터를 먼저 만들어두는 꼴.
+# SOC - 충전 %, OCV - 개방 회로 전압 미리 지정.
 
 # ------------------------------------------------------------------
 # 2. 이산시간 상태공간 시뮬레이터
